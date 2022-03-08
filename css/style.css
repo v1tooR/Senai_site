@@ -45,6 +45,11 @@ body {
   color: white;
 }
 
+.header a.active:hover {
+  background-color: #8f2412;
+  transition: 0.6s;
+}
+
 .header-right {
   float: right;
   margin-top: 20px;
@@ -168,16 +173,14 @@ body {
     .slider li input:checked ~ img {
         opacity: 1;
         visibility: visible;
-        z-index: 10;
+        z-index: 1;
     }
     
     .slider .imglateral{
         display:inline-block;
     }
 
-    .img-right{
-        width: 600px;
-    }
+    
     .coluna{
         float: left;
         width: 50%;
@@ -191,6 +194,7 @@ body {
         clear: both;
         display: table;
       }
+      
     
     hr{
         background-color: #9c3927;
@@ -200,6 +204,7 @@ body {
         margin-top: 30px;
         margin-left: 280px;
     }
+    
     .search{
         margin-top: 40px;
         margin-left: 25%;
@@ -231,8 +236,7 @@ body {
         cursor: pointer;
         font-size: 20px;
       }
-      
-
+    
       .wrap{
         width: 30%;
         position: absolute;
@@ -240,11 +244,13 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
       }
+
     .title{
         text-align: center;
         margin-top: 60px;
-        font-weight: 100;
+        font-weight: 400;
     }
+
     .education{
       margin-top: 5%;
       margin-left: 18%;
@@ -257,3 +263,277 @@ body {
         width: 200px;
         display: inline-block;
     }
+
+    @media screen and (max-width: 500px){
+      .coluna{
+        float: none;
+        width: 40%;
+      }
+      .slider{
+        width: 230%;
+        margin-left: 0%;
+      }
+      hr{
+        width: 70%;
+        margin-left: 75px;
+      }
+      .search {
+        margin-left: 22%;
+      }
+      .education{
+        margin-left: 26%;
+      }
+    }
+
+    .atalho{
+      display:flex;
+      margin-top: 3%;
+      justify-content: center;
+  }
+  .atalho1{
+    width: 10%;
+    background-color:#9c3927;
+    border-radius: 7px;
+    text-align: center;
+    margin-right: 1%;
+    margin-left: 1%;
+    transition: 0.6s;
+    padding: 10px; 
+    border: 2px solid transparent;
+}
+
+.atalho1:hover{
+    color: #9c3927;
+    background-color: white;
+    border: 2px solid #9c3927;
+}
+
+.atalho1 a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+@media screen and (max-width: 500px) {
+ 
+  .atalho1 a{
+        font-size: 15px;
+    }
+}
+
+.atalho1:hover a{
+    color: #9c3927;
+}
+    .footer-distributed{
+      font-family: 'Geo', sans-serif; 
+  }
+  footer{
+      margin-top: 10000px;
+    position: relative;
+    bottom: 0;
+      font-family: 'Geo', sans-serif;
+  }
+  
+  @media (max-height:500px){
+    footer { position: static; }
+    header { padding-top:40px; }
+  }
+  
+  .footer-distributed .footer-links:hover{
+      opacity: 0.65;
+      transition: 0.6s;
+  }
+  .footer-distributed{
+    background-color: #000000;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+      font-family: 'Geo', sans-serif;
+  }
+  
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+      font: 'Geo', sans-serif;
+  }
+  
+  /* Footer left */
+  
+  .footer-distributed .footer-left{
+    width: 30%;
+      font: 'Geo', sans-serif;
+  }
+  
+  .footer-distributed h3{
+    color:  #ffffff;
+    font: 'Geo', sans-serif;
+    margin: 0;
+  }
+  
+  /* The company logo */
+  
+  .footer-distributed .footer-left img{
+    width: 30%;
+  }
+  
+  .footer-distributed h3 span{
+    color:  #9c3927;
+      font: 'Geo', sans-serif;
+  }
+  
+  /* Footer links */
+  
+  .footer-distributed .footer-links{
+    color:  #ffffff;
+    margin: 20px 0 12px;
+  }
+  
+  .footer-distributed .footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color:  inherit;
+  }
+  
+  .footer-distributed .footer-company-name{
+    color:  #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  /* Footer Center */
+  
+  .footer-distributed .footer-center{
+    width: 35%;
+  }
+  
+  
+  .footer-distributed .footer-center i{
+    background-color:  #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+  }
+  
+  .footer-distributed .footer-center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+  }
+  
+  .footer-distributed .footer-center p{
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin:0;
+  }
+  
+  .footer-distributed .footer-center p span{
+    display:block;
+    font-weight: normal;
+    font-size:14px;
+    line-height:2;
+  }
+  .footer-distributed .footer-center h5{
+    color: #f1f1f1;
+    font-weight: 100;
+    margin-right: 20px;
+  }
+  
+  .footer-distributed .footer-center p a{
+    color:  #a53724;
+    text-decoration: none;;
+  }
+  
+  
+  /* Footer Right */
+  
+  .footer-distributed .footer-right{
+    width: 30%;
+  }
+  
+  .footer-distributed .footer-company-about{
+    line-height: 20px;
+    color:  #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  .footer-distributed .footer-company-about span{
+    display: block;
+    color:  #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .footer-distributed .footer-icons{
+    margin-top: 25px;
+  }
+  
+  .footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    
+    border-radius: 2px;
+  
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+  
+    margin-right: 3px;
+    margin-bottom: 5px;
+  }
+  
+  
+  @media (max-width: 500px) {
+  
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+  
+    .footer-distributed .footer-center i{
+      margin-left: 0;
+    }
+  
+  }
+  /* width */
+  ::-webkit-scrollbar {
+      width: 10px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: rgb(241, 229, 229);
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #cf3737;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #801c1c;
+    } 
