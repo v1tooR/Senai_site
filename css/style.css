@@ -232,7 +232,7 @@ body {
         font-size: 20px;
       }
       
-      /*Resize the wrap to see the search bar change!*/
+
       .wrap{
         width: 30%;
         position: absolute;
@@ -242,11 +242,16 @@ body {
       }
     .title{
         text-align: center;
-        margin-top: 40px;
+        margin-top: 60px;
         font-weight: 100;
     }
     .education{
+      margin-top: 5%;
+      margin-left: 18%;
+    }
+    .education ul li{
         display: inline-block;
+        
     }
     .education img{
         width: 200px;
